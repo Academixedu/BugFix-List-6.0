@@ -6,6 +6,6 @@ public class Bug1 {
         list.add(1);
         list.add(2);
         list.add(3);
-        System.out.println(list.get(3));
+        System.out.println(list.get(2)); // Accessing the third element which is at index 2
     }
 }

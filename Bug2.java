@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Bug2 {
     public static void main(String[] args) {
@@ -8,10 +7,10 @@ public class Bug2 {
         list.add(2);
         list.add(3);
 
-        Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            list.remove(1);
-            System.out.println(iterator.next());
+        for (int i = 0; i < list.size(); i++) {
+            list.remove(i); // Remove the element at index i
+            System.out.println(list);
+            i--; // Decrement i to adjust for the shifted indices after removal
         }
     }
 }
