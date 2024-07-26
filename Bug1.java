@@ -6,6 +6,12 @@ public class Bug1 {
         list.add(1);
         list.add(2);
         list.add(3);
+     //you should add more before accessing index 3:
+        list.add(4);
+
         System.out.println(list.get(3));
+
+        //you should print 2:
+       // System.out.println(list.get(2));
     }
 }

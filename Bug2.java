@@ -10,8 +10,13 @@ public class Bug2 {
 
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
-            list.remove(1);
-            System.out.println(iterator.next());
+            Integer number = iterator.next();
+            
+            if (number == 2) { // Example condition
+                iterator.remove();
+            } else {
+                System.out.println(number);
+            }
         }
     }
 }
