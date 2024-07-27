@@ -10,8 +10,9 @@ public class Bug2 {
 
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
-            list.remove(1);
-            System.out.println(iterator.next());
+            iterator.next();
+            iterator.remove();
+            System.out.println(list);
         }
     }
 }
