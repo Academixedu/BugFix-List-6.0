@@ -5,6 +5,9 @@ public class Bug3 {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
-        list.set(2, 3); 
+        list.add(3); 
+        for(Integer e:list){
+            System.out.println(e);
     }
+}
 }
