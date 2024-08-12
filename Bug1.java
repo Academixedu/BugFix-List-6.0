@@ -1,3 +1,5 @@
+
+
 import java.util.ArrayList;
 
 public class Bug1 {
@@ -6,6 +8,13 @@ public class Bug1 {
         list.add(1);
         list.add(2);
         list.add(3);
-        System.out.println(list.get(3));
+        for(Integer e:list){
+            System.out.println(e);
+        }
+        System.out.println(list.get(2));
     }
 }
+
+
+
+
