@@ -6,5 +6,8 @@ public class Bug3 {
         list.add(1);
         list.add(2);
         list.set(2, 3); 
+        list.set(0, 3); 
+        list.set(1, 3); 
+        System.out.println(list);
     }
 }
