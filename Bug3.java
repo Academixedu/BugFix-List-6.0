@@ -8,7 +8,6 @@ public class Bug3 {
         list.set(1,2);
         for (Integer integer : list) {
             System.out.println(integer);
-        }
-        
+        }  
     }
 }
