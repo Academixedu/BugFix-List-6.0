@@ -5,6 +5,10 @@ public class Bug3 {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
-        list.set(2, 3); 
+        list.set(1, 3); //the index number is exceded the number of acquired indeces 
+        for (Integer i : list) {
+            System.out.println(i);//also didnt print values 
+            
+        }         
     }
 }
