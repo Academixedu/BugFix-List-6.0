@@ -11,7 +11,7 @@ public class Bug2 {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             list.remove(1);
-            System.out.println(iterator.next());
+            System.out.println(iterator.next()); 
         }
     }
 }
