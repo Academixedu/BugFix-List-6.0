@@ -6,5 +6,5 @@ public class Bug3 {
         list.add(1);
         list.add(2);
         list.set(2, 3); 
-    }
+    } 
 }
