@@ -17,6 +17,7 @@ public class Bug2 {
             System.out.println(num);
         }
 
+       
         
     }
 }
