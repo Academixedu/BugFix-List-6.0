@@ -5,6 +5,10 @@ public class Bug3 {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
-        list.set(2, 3); 
+        list.set(1,2);
+        for (Integer integer : list) {
+            System.out.println(integer);
+        }
+        
     }
 }
