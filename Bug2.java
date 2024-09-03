@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+
+import java.util.*;
 
 public class Bug2 {
     public static void main(String[] args) {
@@ -10,8 +10,15 @@ public class Bug2 {
 
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
-            list.remove(1);
-            System.out.println(iterator.next());
+            Integer num = iterator.next();
+            if (num.equals(2)) 
+               iterator.remove();
+            
+            System.out.println(num);
         }
+
+       
+        
     }
 }
+
